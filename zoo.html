@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Zoo Exercise</title>
+    <link href="content/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="title center-text">Raúl's Zoo</h1>
+    <form>
+        <input type="text" name="animal" id="animal" placeholder="Nombre del animal" required />
+        <input type="text" name="speech" id="speech" placeholder="Diálogo del animal" required />
+        <input type="text" name="sound" id="sound" placeholder="Sonido del animal" required />
+        <input type="button" name="add" value="Añadir" id="add"/>
+    </form>
+    <section>
+        <h2 class="subtitle center-text">Lista de animales</h2>
+        <div id="zoo"></div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="content/zoo.js"></script>
+</body>
+</html>

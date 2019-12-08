@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>URL Parser</title>
+    <link href="content/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="title center-text">URL to JSON</h1>
+    <form>
+        <h2 class="subtitle center-text">Enter JSON format and content</h2>
+        <input type="text" name="urlFormat" id="urlFormat" value="" placeholder="Ingrese formato de URL" />
+        <input type="text" name="urlContent" id="urlContent" value="" placeholder="Ingrese contenido" />
+        <input type="button" name="proccess" id="proccess" value="Procesar" disabled/>
+    </form>
+    <section>
+        <h2 class="subtitle center-text">JSON Generated</h2>
+        <p id="json"></p>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="content/parser.js"></script>
+</body>
+</html>

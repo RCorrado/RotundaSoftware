@@ -1,0 +1,99 @@
+//RESET
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*MEDIA QUERIES*/
+//<= A 500px
+@mixin mobile {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+//STYLES
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10% 0;
+
+    form {
+        margin: 1% auto;
+    }
+
+    input {
+        display: block;
+        max-width: 50%;
+        margin: 0.3rem auto;
+        padding: 2px;
+
+        @include mobile {
+            max-width: 98%;
+        }
+        //boton de conversion para el parser
+        &[type=button] {
+            padding: 10px;
+            border-radius: 0;
+            border: none;
+            background-color: #0094ff;
+            margin-top: 1.5%;
+            transition: box-shadow ease .75s;
+
+            &:hover {
+                box-shadow: 2px 2px 5px #0a0a0a;
+                cursor: pointer;
+            }
+        }
+    }
+
+    button {
+        display: block;
+        max-width: 50%;
+        margin: 1.5% auto 0.3rem auto;
+        padding: 10px;
+        border-radius: 0;
+        border: none;
+        background-color: #0094ff;
+        transition: box-shadow ease .75s;
+
+        &:hover {
+            box-shadow: 2px 2px 5px #0a0a0a;
+            cursor: pointer;
+        }
+    }
+
+    section {
+        margin-top: 2.5%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2.5%;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    #json {
+        display: block;
+        max-width: 15%;
+        padding: 2% 5% 2% 1%;
+        margin: 2% auto;
+        background: #8f8f8f;
+        box-shadow: 2px 2px 5px #030303;
+
+        @include mobile {
+            max-width: 90%;
+            padding-left: 20%;
+        }
+    }
+
+    .tabAdded {
+        margin-left: 15px;
+    }
+}

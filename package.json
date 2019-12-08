@@ -1,0 +1,21 @@
+{
+  "name": "rotunda-software",
+  "version": "1.0.0",
+  "description": "Examen para Rotunda",
+  "main": "main.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "author": "Ra�l Corrado",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "sass": "^1.23.7"
+  }
+}
